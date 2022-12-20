@@ -1,2 +1,2 @@
-# INF-231-PROJECT
+# Arukachi.github.io
 Сайт про Мурад
