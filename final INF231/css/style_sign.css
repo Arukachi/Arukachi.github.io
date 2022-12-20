@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nerko One', cursive;
+}
+
+body {
+    background-image: url(../img/sign_bc.jpg);
+}
+
+.container {
+    position: absolute;
+    height: 70vh;
+    padding: 3vw;
+    width:25vw;
+    top: 50vh;
+    left: 50vw;
+    border-radius: 10%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(76, 164, 180);
+}
+
+.sign {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    
+}
+
+
+.SignIn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background-color: rgb(76, 164, 180); */
+    text-align: center;
+}
+
+
+.SignUp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background-color: rgb(76, 164, 180); */
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flipCard {
+    transform: rotateY(180deg);
+}
+
+
+.signin{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text {
+    font-size: 2vw;
+    font-weight: bolder;
+    margin-bottom: 3vh;
+}
+
+.signin input {
+    margin-top: 3vh;
+}
+
+.signin #submit {
+    margin-top: 10vh;
+}
+
+
+a {
+    cursor: pointer;
+}
+
+.no {
+    margin-top: 5vh;
+    font-size: 1vw;
+}
+
+
+.signup {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.signup input {
+    margin-bottom: 3vh;
+}
+
+.signup .radio{
+    display: flex;
+    justify-content:space-around;
+}
+
+.signup #subm {
+    margin-top: 5vh;
+}
+
+.incorrect{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    background-color: white;
+    color: red;
+    padding: 1rem 3rem;
+    display: none;
+}
+
+.incorrect button {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

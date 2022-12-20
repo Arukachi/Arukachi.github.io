@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Nerko+One&family=Secular+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nerko One', cursive;
+}
+
+
+body {
+    position: relative;
+    background-image: url("../img/bgcat.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 4.5vw;
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+.profile {
+    display: flex;
+}
+
+.photo img {
+    margin-left: 40%;
+    margin-top: 1%;
+    width: 30%;
+    height: 70%;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.photo button {
+    margin-top: 2vw;
+    margin-left: 45.5%;
+    background-color: #d7ae46;
+    border: none;
+    border-radius: 5%;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    width: 10vw;
+    height: 3vw;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(28, 25, 22, 0.25) 0 0.5vw 0.6vw;
+    transform: translateY(-0.1px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.info {
+    width: 40%;
+    display: block;
+    background-color: rgba(207, 169, 63, 0.75);
+    border-radius: 5%;
+    padding-left: 1.5vw;
+    margin-right: 20vw;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+        rgb(31, 193, 27) 0px 0px 0px 6px,
+        rgb(255, 217, 19) 0px 0px 0px 9px,
+        rgb(255, 156, 85) 0px 0px 0px 12px,
+        rgb(255, 85, 85) 0px 0px 0px 15px;
+
+}
+
+
+.info h2 {
+    color: whitesmoke;
+    margin: 0.5vw;
+    border: 0.2vw solid;
+    border-radius: 1rem ;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
+
+.info h3 {
+    font-size: 2.5vw;
+}
+
+.pop_edit {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 40vw;
+    height: 50vh;
+    left: 30%;
+    top: 25%;
+    border-radius: 2rem;
+    background-color: rgb(45, 45, 45);
+    padding: 3rem;
+    color: whitesmoke;
+}
+
+.pop_edit .a {
+    width: 40%;
+}
+
+.pop_edit h2 {
+    font-size: 3.1vw;
+    margin-bottom: 1vw;
+}
+
+.pop_edit p,
+label {
+    font-size: 1.1vw;
+}
+
+.pop_edit input {
+    margin-bottom: 1vw;
+}
+
+button {
+    background-color: #d7ae46;
+    border: none;
+    border-radius: 5%;
+    font-size: 1vw;
+    color: #FFFFFF;
+    width: 6vw;
+    height: 2vw;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}

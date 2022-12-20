@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Nerko+One&family=Secular+One&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nerko One', cursive;
+}
+
+body {
+    background-image: url("../img/bgcat2.png");
+    background-size: cover;
+}
+
+#lapki {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    top: 3vw;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+#cover {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+}
+
+#navbarBG {
+    display: flex;
+    position: fixed;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 1;
+}
+
+#navdot {
+    font-size: 2.5vw;
+    cursor: pointer;
+    margin-left: 95vw;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: rgb(107, 72, 61);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6vw;
+}
+
+.sidenav a {
+    padding: 1vw 1vw 2vw 2vw;
+    text-decoration: none;
+    font-size: 2vw;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 0.1vw solid;
+}
+
+.sidenav .navEl:hover {
+    animation: anim2 500ms cubic-bezier(0.175, 0.885, 0.32, 0.275) infinite;
+}
+
+.sidenav .closebtn {
+    color: whitesmoke;
+    cursor: pointer;
+    position: absolute;
+    top: -3vw;
+    right: 1vw;
+    font-size: 6vw;
+}
+
+.navEl:hover{
+    cursor: pointer;
+}
+
+#profPicNav {
+    width: 15vw;
+    height: 12vw;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -5vw;
+    margin-left: 2vw;
+}
+
+.logout {
+    display: inline-block;
+    padding: 1vw 3vw;
+    margin-left: 2vw;
+    margin-top: 1.5vw;
+    font-size: 2.3vw;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #b8958c;
+    border: none;
+    border-radius: 2.2vw;
+    box-shadow: 0 0.9vw #ab614f;
+}
+
+.logout:hover {
+    background-color: #c16253;
+    color: rgb(221, 177, 170);
+    box-shadow: 0 0.9vw #853d32;
+}
+
+.logout:active {
+    background-color: #c16253;
+    box-shadow: 0 0.9vw #853d32;
+    transform: translateY(0.4vw);
+}
+
+@keyframes anim2 {
+    0% {
+        color: rgb(209, 104, 72);
+        transform: translateY(0);
+    }
+
+    25% {
+        color: rgb(246, 148, 118);
+        transform: translateY(-0.5vw);
+    }
+
+    50% {
+        color: rgb(209, 104, 72);
+        transform: translateY(0);
+    }
+
+    75% {
+        color: rgb(246, 148, 118);
+        transform: translateY(0.5vw);
+    }
+
+    100% {
+        color: rgb(209, 104, 72);
+        transform: translateY(0);
+    }
+}
+
+.sidenav .user_name{
+    color:black;
+    border-color: whitesmoke;
+}
+
+.headerText {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h1 {
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#windows {
+    display: flex;
+    justify-content: space-around;
+}
+
+#box {
+    flex: 0 0 25%;
+    height: 70%;
+    text-align: center;
+    border-radius: 4%;
+    flex-direction: column;
+}
+
+#windPic {
+    width: 20vw;
+    height: 14vw;
+    margin-top: 3vw;
+    border-radius: 5%;
+}
+
+#box,
+#boxText,
+.moreLink,
+h3 {
+    background-color: rgba(235, 160, 106, 0.75)
+}
+
+h3,
+#boxText,
+#more,
+.moreLink {
+    background-color: transparent;
+}
+
+.box1 {
+    position: relative;
+    top: 8vw;
+}
+
+.box2 {
+    position: relative;
+    top: 16vw;
+}
+
+.box3 {
+    position: relative;
+    top: 24vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+    margin: 3vw;
+}
+
+#boxText {
+    font-size: 1.5vw;
+    margin: 2vw;
+}
+
+#more {
+    font-size: 2vw;
+    margin: 0.8vw;
+}
+
+.bd {
+    position: relative;
+    top: 90vw;
+}
+
+#time {
+    display: flex;
+    font-size: 5vw;
+    color: whitesmoke;
+    z-index: 2;
+    width: 65vw;
+    height: 6vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(0.5vw);
+}
+
+#time:hover {
+    filter: blur(0);
+    cursor: pointer;
+}
+
+.bdMuraPic {
+    background-image: url(../img/bd.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 95vw;
+    height: 48vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3vw solid whitesmoke;
+    border-radius: 5%;
+    transition: 0.5s ease;
+    filter: blur(0.5vw);
+}
+
+.bdMuraPic:hover {
+    filter: blur(0);
+}
+
+.particle {
+    --x: 0;
+    --y: 0;
+    background-color: rgb(221, 67, 67);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 0.5vw;
+    width: 0.5vw;
+    z-index: -1;
+}
+
+.particle.move {
+    animation: move 500ms linear forwards;
+}
+
+@keyframes move {
+    to {
+        transform: translate(var(--x), var(--y));
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#game {
+    position: relative;
+    top: 140vw;
+    width: 60vw;
+    height: 20vw;
+    border: 0.8vw solid black;
+    margin: auto;
+    background-image: linear-gradient(rgba(250, 250, 250, 0), rgba(175, 194, 200, 0.7)), url("../img/pixelHome.png");
+}
+
+#character {
+    width: 4.126vw;
+    height: 4.1vw;
+    background-image: url("../img/pixelMura1.png");
+    background-size: auto 4.126vw;
+    position: relative;
+    top: 14.35vw;
+    left: 1.3vw;
+}
+
+.run {
+    animation: run 0.3s linear infinite;
+}
+
+@keyframes jump {
+    0% {
+        top: 14.35vw;
+    }
+
+    30% {
+        top: 10.35vw;
+    }
+
+    50% {
+        top: 7.35vw;
+    }
+
+    80% {
+        top: 10.35vw;
+    }
+
+    100% {
+        top: 14.35vw;
+    }
+}
+
+@keyframes run {
+    0% {
+        background-image: url("../img/pixelMura1.png");
+    }
+
+    50% {
+        background-image: url("../img/pixelMura2.png");
+    }
+
+    100% {
+        background-image: url("../img/pixelMura.png");
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+#block {
+    width: 2.55vw;
+    height: 2.55vw;
+    background-image: url("../img/pixelBox.png");
+    background-size: auto 2.55vw;
+    position: relative;
+    top: 11.8vw;
+    left: 56vw;
+
+}
+
+.blockMove {
+    animation: block 1.6s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 56vw
+    }
+
+    100% {
+        left: -0.5vw
+    }
+}
+
+#gameOver {
+    display: none;
+    font-size: 70px;
+    position: absolute;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+    width: 362px;
+    height: 80px;
+    color: black;
+}
+
+#gameRules {
+    position: relative;
+    top: 138vw;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    top: 160vw;
+    width: 100%;
+    background: whitesmoke;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.icon,
+.fItem {
+    list-style: none;
+}
+
+.iconLink {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.iconLink:hover {
+    transform: translateY(-10px);
+}
+
+#iconPic {
+    width: 4vw;
+    height: 4vw;
+}
+
+.fLink {
+    font-size: 3vw;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.fLink:hover {
+    opacity: 1;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../img/wave.png");
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
